@@ -72,9 +72,9 @@ export default function Portfolio() {
             <p>© 2026 Almas Adedoyin. All rights reserved.</p>
           </div>
           <div className="flex gap-8">
-            <a href="#" className="hover:text-white transition">LinkedIn</a>
-            <a href="#" className="hover:text-white transition">Medium</a>
-            <a href="#" className="hover:text-white transition">Research</a>
+            <a href="https://www.linkedin.com/in/almashamzat" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">LinkedIn</a>
+            <a href="http://medium.com/@almashamzat" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">Medium</a>
+            <a href="https://substack.com/@almashamzat" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">Substack</a>
           </div>
         </div>
       </footer>
@@ -292,10 +292,7 @@ function PortfolioPage() {
         "Mitigation Roadmap",
         "Compliance Checklist"
       ],
-      // PLACEHOLDER: Insert Google Drive folder link
-      folderLink: "https://drive.google.com/drive/folders/[INSERT_DPIA_FOLDER_ID]",
-      // PLACEHOLDER: Insert report document link
-      reportLink: "https://drive.google.com/file/d/[INSERT_DPIA_REPORT_ID]/view",
+      folderLink: "https://drive.google.com/drive/folders/1b_RLGxZw3_k5diSeBgakASxylHDEjGIA?usp=drive_link",
       focusArea: "Privacy & Data Protection"
     },
     {
@@ -309,10 +306,7 @@ function PortfolioPage() {
         "Remediation Roadmap",
         "Policy Recommendations"
       ],
-      // PLACEHOLDER: Insert Google Drive folder link
-      folderLink: "https://drive.google.com/drive/folders/[INSERT_GDPR_FOLDER_ID]",
-      // PLACEHOLDER: Insert report document link
-      reportLink: "https://drive.google.com/file/d/[INSERT_GDPR_REPORT_ID]/view",
+      folderLink: "https://drive.google.com/drive/folders/1VmdgrO5tprWvXHv_J3g8EWkaH5xpYNLQ?usp=drive_link",
       focusArea: "Privacy & Data Protection"
     },
     {
@@ -326,10 +320,7 @@ function PortfolioPage() {
         "Risk Assessment",
         "Implementation Roadmap"
       ],
-      // PLACEHOLDER: Insert Google Drive folder link
-      folderLink: "https://drive.google.com/drive/folders/[INSERT_AI_GOV_FOLDER_ID]",
-      // PLACEHOLDER: Insert report document link
-      reportLink: "https://drive.google.com/file/d/[INSERT_AI_GOV_REPORT_ID]/view",
+      folderLink: "https://drive.google.com/drive/folders/19NB55koHvB5aOxEIwH9wxUFHMdXnAJXl?usp=drive_link",
       focusArea: "AI Governance"
     },
     {
@@ -343,10 +334,7 @@ function PortfolioPage() {
         "Risk Matrix",
         "Compliance Recommendations"
       ],
-      // PLACEHOLDER: Insert Google Drive folder link
-      folderLink: "https://drive.google.com/drive/folders/[INSERT_AML_FOLDER_ID]",
-      // PLACEHOLDER: Insert report document link
-      reportLink: "https://drive.google.com/file/d/[INSERT_AML_REPORT_ID]/view",
+      folderLink: "https://drive.google.com/drive/folders/1CIzxKDAezCq6qx_o7F1NBVMaOfJWDiCg?usp=drive_link",
       focusArea: "Governance, Risk & Compliance (GRC)"
     },
     {
@@ -360,10 +348,7 @@ function PortfolioPage() {
         "Policy Recommendations",
         "Implementation Roadmap"
       ],
-      // PLACEHOLDER: Insert Google Drive folder link
-      folderLink: "https://drive.google.com/drive/folders/[INSERT_ISG_FOLDER_ID]",
-      // PLACEHOLDER: Insert report document link
-      reportLink: "https://drive.google.com/file/d/[INSERT_ISG_REPORT_ID]/view",
+      folderLink: "https://drive.google.com/drive/folders/1MJNoL3M-MRqi334tA1NhsoHmkVK_rKNS?usp=drive_link",
       focusArea: "Governance, Risk & Compliance (GRC)"
     }
   ];
@@ -421,24 +406,14 @@ function PortfolioPage() {
 
               {/* Project Links */}
               <div className="flex flex-col sm:flex-row gap-4 pt-4 border-t border-gray-200">
-                {/* PLACEHOLDER: Google Drive Folder */}
                 <a 
                   href={project.folderLink}
                   className="flex items-center gap-2 text-sm font-medium text-rose-600 hover:text-rose-700 transition"
-                  title="EDIT: Replace with actual Google Drive folder link"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <Folder size={16} />
                   View Project Folder
-                </a>
-                
-                {/* PLACEHOLDER: Report Document */}
-                <a 
-                  href={project.reportLink}
-                  className="flex items-center gap-2 text-sm font-medium text-rose-600 hover:text-rose-700 transition"
-                  title="EDIT: Replace with actual Google Drive document link"
-                >
-                  <ExternalLink size={16} />
-                  View Full Report
                 </a>
               </div>
             </div>
@@ -457,42 +432,38 @@ function ArticlesPage() {
     {
       title: "AI vs Humans vs Law: Is AI Taking Away Our Freedom?",
       status: "Published",
-      platform: "Medium",
-      // PLACEHOLDER: Insert Medium article link
-      link: "https://medium.com/@[INSERT_USERNAME]/[INSERT_ARTICLE_ID]",
+      platform: "Substack",
+      link: "https://substack.com/@almashamzat/note/p-196989297?utm_source=notes-share-action",
       date: "2026",
       description: "Exploring the intersection of AI capability, human agency, and legal frameworks in the era of generative AI.",
-      category: "AI Governance"
-    },
-    {
-      title: "Data Protection by Design: More Than Compliance",
-      status: "In Progress",
-      platform: "Substack",
-      // PLACEHOLDER: Insert Substack article link
-      link: "https://substack.com/@[INSERT_USERNAME]/[INSERT_ARTICLE_ID]",
-      date: "Q3 2026",
-      description: "How embedding privacy into product and organizational design creates competitive advantage and regulatory safety.",
-      category: "Privacy & Data Protection"
-    },
-    {
-      title: "Governing Synthetic Media Harm: A Framework for Deepfakes and Non-Consensual AI-Generated Imagery",
-      status: "In Progress",
-      platform: "Research",
-      // PLACEHOLDER: Insert research document/paper link
-      link: "https://drive.google.com/file/d/[INSERT_RESEARCH_PAPER_ID]/view",
-      date: "Q2 2026",
-      description: "Framework addressing governance of AI-generated synthetic media harm, balancing technical, legal, and human approaches.",
       category: "AI Governance"
     },
     {
       title: "Africa's Digital Future: Talent, Policy, and Opportunity",
       status: "In Progress",
       platform: "Medium",
-      // PLACEHOLDER: Insert Medium article link
-      link: "https://medium.com/@[INSERT_USERNAME]/[INSERT_ARTICLE_ID]",
+      link: "#",
       date: "Q1 2026",
       description: "Analysis of Africa's tech and governance landscape as a source of both urgent risk and extraordinary opportunity.",
       category: "Strategy & Policy"
+    },
+    {
+      title: "Governing Synthetic Media Harm: A Framework for Deepfakes and Non-Consensual AI-Generated Imagery",
+      status: "In Progress",
+      platform: "Research",
+      link: "#",
+      date: "Q2 2026",
+      description: "Framework addressing governance of AI-generated synthetic media harm, balancing technical, legal, and human approaches.",
+      category: "AI Governance"
+    },
+    {
+      title: "Data Protection by Design: More Than Compliance",
+      status: "In Progress",
+      platform: "Substack",
+      link: "#",
+      date: "Q3 2026",
+      description: "How embedding privacy into product and organizational design creates competitive advantage and regulatory safety.",
+      category: "Privacy & Data Protection"
     }
   ];
 
@@ -534,13 +505,16 @@ function ArticlesPage() {
               <p className="text-gray-600 leading-relaxed mb-4">{article.description}</p>
 
               {/* Link */}
-              <a 
-                href={article.link}
-                className="inline-flex items-center gap-2 text-rose-600 hover:text-rose-700 font-medium text-sm transition"
-                title={`EDIT: Replace with actual ${article.platform} link`}
-              >
-                Read Article <ArrowRight size={16} />
-              </a>
+              {article.link !== '#' && (
+                <a 
+                  href={article.link}
+                  className="inline-flex items-center gap-2 text-rose-600 hover:text-rose-700 font-medium text-sm transition"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Read Article <ArrowRight size={16} />
+                </a>
+              )}
             </article>
           ))}
         </div>
@@ -572,13 +546,11 @@ function ContactPage() {
             <p className="text-gray-600 text-sm mb-4">
               For professional inquiries, collaboration, or conversation:
             </p>
-            {/* PLACEHOLDER: Insert email address */}
             <a 
-              href="mailto:[INSERT_EMAIL]"
+              href="mailto:almashamzat@outlook.com"
               className="text-rose-600 font-medium hover:text-rose-700 transition"
-              title="EDIT: Replace [INSERT_EMAIL] with your actual email address"
             >
-              [INSERT_EMAIL]
+              almashamzat@outlook.com
             </a>
           </div>
 
@@ -588,13 +560,11 @@ function ContactPage() {
             <p className="text-gray-600 text-sm mb-4">
               Connect with me professionally to stay updated on my work:
             </p>
-            {/* PLACEHOLDER: Insert LinkedIn profile URL */}
             <a 
-              href="https://linkedin.com/in/[INSERT_LINKEDIN_PROFILE]"
+              href="https://www.linkedin.com/in/almashamzat"
               className="text-rose-600 font-medium hover:text-rose-700 transition flex items-center gap-2"
               target="_blank"
               rel="noopener noreferrer"
-              title="EDIT: Replace [INSERT_LINKEDIN_PROFILE] with your actual LinkedIn profile username"
             >
               View Profile <ExternalLink size={16} />
             </a>
@@ -606,13 +576,11 @@ function ContactPage() {
             <p className="text-gray-600 text-sm mb-4">
               Follow my thought leadership on AI governance and privacy:
             </p>
-            {/* PLACEHOLDER: Insert Medium profile URL */}
             <a 
-              href="https://medium.com/@[INSERT_MEDIUM_USERNAME]"
+              href="http://medium.com/@almashamzat"
               className="text-rose-600 font-medium hover:text-rose-700 transition flex items-center gap-2"
               target="_blank"
               rel="noopener noreferrer"
-              title="EDIT: Replace [INSERT_MEDIUM_USERNAME] with your actual Medium username"
             >
               View Articles <ExternalLink size={16} />
             </a>
@@ -624,29 +592,18 @@ function ContactPage() {
             <p className="text-gray-600 text-sm mb-4">
               Subscribe to my newsletter for governance and privacy insights:
             </p>
-            {/* PLACEHOLDER: Insert Substack publication URL */}
             <a 
-              href="https://substack.com/@[INSERT_SUBSTACK_USERNAME]"
+              href="https://substack.com/@almashamzat"
               className="text-rose-600 font-medium hover:text-rose-700 transition flex items-center gap-2"
               target="_blank"
               rel="noopener noreferrer"
-              title="EDIT: Replace [INSERT_SUBSTACK_USERNAME] with your actual Substack username"
             >
               Subscribe <ExternalLink size={16} />
             </a>
           </div>
         </div>
 
-        {/* Email Signature Template */}
-        <div className="p-6 bg-rose-50 border border-rose-200">
-          <h3 className="font-semibold text-gray-900 mb-2">Email Signature Template</h3>
-          <p className="text-xs text-gray-600 mb-3">Recommended format for professional correspondence:</p>
-          <div className="bg-white p-3 rounded text-xs text-gray-700 font-mono border border-gray-200">
-            <p>Almas Adedoyin Hamzat</p>
-            <p>AI Governance | Privacy & Data Protection | Compliance & Cybersecurity Governance</p>
-            <p className="text-rose-600 mt-2">LinkedIn | Medium | Substack</p>
-          </div>
-        </div>
+
       </section>
     </div>
   );
